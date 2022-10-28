@@ -1,13 +1,7 @@
-def reverse(s):
-    str = ""
-    for i in s:
-        str = i + str
-    return str
-  
-s = "Geeksforgeeks"
-  
-print("The original string is : ", end="")
-print(s)
-  
-print("The reversed string(using loops) is : ", end="")
-print(reverse(s))
+import numpy as np
+row,col=list(map(int,input('Enter row and col').split()))
+A=np.array(list(map(int,input('Enter matrix A').split())))
+
+A.shape=(int(row),int(col))
+print("Given Array=",A)
+print("Transpose=",np.transpose(A))
